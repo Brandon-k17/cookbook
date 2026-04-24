@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nom": "Ndolé",
+    "categorie": "Plats",
+    "image": "images/mongo.jpg",
+    "ingredients": ["500g de feuilles de ndolé", "500g viande de bœuf", "200g crevettes séchées", "100g arachides", "2 oignons", "4 gousses d'ail", "Huile de palme", "Sel, poivre"],
+    "instructions": "1. Faire bouillir les feuilles de ndolé plusieurs fois pour enlever l'amertume.\n2. Faire dorer la viande coupée en morceaux dans l'huile de palme.\n3. Ajouter les oignons et l'ail émincés, faire revenir 5 min.\n4. Ajouter les crevettes séchées et les arachides moulues.\n5. Incorporer les feuilles de ndolé égouttées.\n6. Mélanger et laisser mijoter 20 min à feu doux.\n7. Saler et poivrer selon le goût."
+  },
+  {
+    "id": 2,
+    "nom": "Eru",
+    "categorie": "Plats",
+    "image": "images/mongo.jpg",
+    "ingredients": ["500g de feuilles d'eru", "300g waterleaf", "200g viande fumée", "150g crevettes séchées", "Huile de palme", "Sel"],
+    "instructions": "1. Laver et decouper finement les feuilles d'eru.\n2. Laver et hacher le waterleaf.\n3. Faire chauffer l'huile de palme dans une grande marmite.\n4. Ajouter la viande fumée coupée en morceaux.\n5. Incorporer les crevettes séchées et mélanger.\n6. Ajouter le waterleaf, couvrir et cuire 10 min.\n7. Ajouter les feuilles d'eru, saler et mélanger.\n8. Laisser cuire 15 min sans ajouter d'eau."
+  },
+  {
+    "id": 3,
+    "nom": "Poulet DG",
+    "categorie": "Plats",
+    "image": "images/poulet.jpeg",
+    "ingredients": ["1 poulet entier", "3 bananes plantains mûres", "2 carottes", "1 poivron", "2 oignons", "4 gousses d'ail", "Céleri", "Huile végétale", "Sel, poivre, piment"],
+    "instructions": "1. Découper et assaisonner le poulet avec ail, sel, poivre et piment.\n2. Faire frire les morceaux de poulet jusqu'à dorure.\n3. Couper les plantains en rondelles et les faire frire séparément.\n4. Dans la même huile, faire revenir oignons, ail et céleri.\n5. Ajouter les carottes et le poivron coupés en julienne.\n6. Remettre le poulet, ajouter un peu d'eau et laisser mijoter 15 min.\n7. Incorporer les plantains frits en dernier et mélanger doucement."
+  },
+  {
+    "id": 4,
+    "nom": "Koki",
+    "categorie": "Entrées",
+    "image": "images/nodemailer.jpg",
+    "ingredients": ["500g de koki décortiqués", "200ml huile de palme", "2 piments rouges", "Sel", "Feuilles de bananier"],
+    "instructions": "1. Tremper le koki 2h puis les mixer finement avec les piments.\n2. Ajouter l'huile de palme et le sel, bien mélanger pour obtenir une pâte homogène.\n3. Couper les feuilles de bananier en grands rectangles et les passer à la flamme pour les ramollir.\n4. Déposer des portions de pâte dans chaque feuille et refermer en paquet.\n5. Disposer les paquets dans une marmite avec un peu d'eau au fond.\n6. Cuire à la vapeur 45 min à 1h en vérifiant l'eau régulièrement."
+  },
+  {
+    "id": 5,
+    "nom": "Beignets Haricots",
+    "categorie": "Entrées",
+    "image": "images/logos.jpg",
+    "ingredients": ["500g haricots blancs décortiqués", "1 oignon", "2 piments", "Sel", "Huile de friture"],
+    "instructions": "1. Tremper les haricots une nuit, puis les décortiquer en frottant entre les mains.\n2. Mixer les haricots avec l'oignon et les piments jusqu'à obtenir une pâte épaisse et mousseuse.\n3. Saler et battre vigoureusement la pâte à la main pour l'aérer.\n4. Faire chauffer l'huile dans une poêle profonde.\n5. Déposer des cuillerées de pâte dans l'huile chaude.\n6. Faire frire 3 à 4 min de chaque côté jusqu'à dorure.\n7. Égoutter sur du papier absorbant et servir chaud."
+  },
+  {
+    "id": 6,
+    "nom": "Gâteau Pistache",
+    "categorie": "Desserts",
+    "image": "images/logos.jpg",
+    "ingredients": ["500g de pistaches ", "4 œufs", "200g sucre", "100ml huile", "1 sachet levure", "Vanille"],
+    "instructions": "1. Torréfier légèrement les pistaches à sec dans une poêle.\n2. Les mixer finement pour obtenir une farine de pistache.\n3. Battre les œufs avec le sucre jusqu'à ce que le mélange blanchisse.\n4. Ajouter l'huile, la vanille et mélanger.\n5. Incorporer la farine de pistache et la levure, bien mélanger.\n6. Verser dans un moule beurré et enfourner à 180°C pendant 35 min.\n7. Vérifier la cuisson avec un couteau, laisser refroidir avant de démouler."
+  },
+  {
+    "id": 7,
+    "nom": "Riz saute",
+    "categorie": "Plats",
+    "image": "images/logos.jpg",
+    "ingredients": ["2 boites de riz", "4 tomates", "3 cubes", "100ml huile", "2 oignons", "2 piments rouges", "2 boites de sardine"],
+    "instructions": "1. Decouper les tomates et oignons.\n2. Les faire frire avec de l'huile et remuer.\n3. Laver le riz et l'ajouter au melange.\n4. Ajouter de l'eau et laisser au feu pour jusqu'a ce qu'elle seche.\n5. Ajouter les deux boites de sardine et melanger."
+  },{
+    "id": 8,
+    "nom": "Crepes",
+    "categorie": "Desserts",
+    "image": "images/crepes.jpg",
+    "ingredients": ["500g de farine ", "4 œufs", "200g sucre en poudre", "100ml huile", "1 de noix de muscade en poudre", "Vanille", "3 sachets de lait"],
+    "instructions": "1. Tamiser la farine et tous les indredients secs en dehors du lait.\n2. Melanger le lait avec de l'eau dans un verre .\n3. Battre les oeufs et les melanger avec le lait.\n4. Ajouter progressivement le melange de lait et oeufs dans celui des ingredients sec en remuant dans le meme sens.\n5. Remuer le tout jusqu'a elimination complete des grumeaux et ajouter de l'eau si la pate est trop epaisse.\n6. Ajouter l'huile et melanger encore jusqu'a obtention d'une pate homogene.\n7. Laisser reposer la pate 30min et faire frire."
+  },
+  {
+    "id": 9,
+    "nom": "Moelleux au chocolat",
+    "categorie": "Desserts",
+    "image": "images/gateau.jpg",
+    "ingredients": ["100g de farine ", "2 œufs", "100g de sucre en poudre", "cacao en poudre", "1 sachet de levure", "Vanille"],
+    "instructions": "1. Melanger tous les ingredients secs dans un recipient.\n2. Separer les jaunes des blancs des oeufs.\n3. Faire monter les blancs en neige.\n4. Melanger le tout delicatement pour avoir une pate aeree.\n5. Mettre au four pour 20min a feu moyen."
+  },
+  {
+    "id": 10,
+    "nom": "Gâteau Pistache",
+    "categorie": "Desserts",
+    "image": "images/gateau.jpg",
+    "ingredients": ["500g de pistaches ", "4 œufs", "200g sucre", "100ml huile", "1 sachet levure", "Vanille"],
+    "instructions": "1. Torréfier légèrement les pistaches à sec dans une poêle.\n2. Les mixer finement pour obtenir une farine de pistache.\n3. Battre les œufs avec le sucre jusqu'à ce que le mélange blanchisse.\n4. Ajouter l'huile, la vanille et mélanger.\n5. Incorporer la farine de pistache et la levure, bien mélanger.\n6. Verser dans un moule beurré et enfourner à 180°C pendant 35 min.\n7. Vérifier la cuisson avec un couteau, laisser refroidir avant de démouler."
+  }
+  
+]

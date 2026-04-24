@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Table</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo"><em>La Table</em></div>
+    <button id="bouton-ouvrir-formulaire"> <b>Ajouter une recette +</b></button>
+  </header>
+
+  <div class="page">
+
+    <aside class="sidebar">
+      <p class="titre-sidebar">CATÉGORIES</p>
+      <ul id="liste-categories"></ul>
+    </aside>
+
+    <main class="contenu">
+
+      <div class="entete-principal">
+        <h1 id="titre-section">Toutes les recettes</h1>
+      </div>
+      <hr />
+
+      <input type="text" id="recherche" placeholder=" Chercher une recette..." />
+
+      <div id="grille">
+
+        <div class="fiche" id="fiche-1" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="fiche" id="fiche-2" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="fiche" id="fiche-3" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="fiche" id="fiche-4" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="fiche" id="fiche-5" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="fiche" id="fiche-6" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="fiche" id="fiche-7" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="fiche" id="fiche-8" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="fiche" id="fiche-9" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+        <div class="fiche" id="fiche-10" data-categorie="">
+          <img class="fiche-image" src="" alt="" />
+          <div class="fiche-contenu">
+            <p class="fiche-categorie"></p>
+            <h3 class="fiche-titre"></h3>
+            <p class="fiche-ingredients"></p>
+            <button class="bouton-detail">Voir détails</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <span><em>La Table</em></span>
+    <nav>
+      <a href="#">À propos</a>
+      <a href="#">Nos recettes</a>
+      <a href="#">Contact</a>
+    </nav>
+    <span>© 2025 La Table</span>
+  </footer>
+
+  <div id="fond-detail" class="masque">
+    <div class="fenetre">
+      <button id="bouton-fermer-detail">X</button>
+      <img id="image-detail" src="" alt="" />
+      <div class="fenetre-contenu">
+        <small id="detail-categorie"></small>
+        <h2 id="detail-nom"></h2>
+        <h3>Ingrédients</h3>
+        <ul id="detail-ingredients"></ul>
+        <h3>Instructions</h3>
+        <p id="detail-instructions"></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fond-formulaire" class="masque">
+    <div class="fenetre">
+      <button id="bouton-fermer-formulaire">X</button>
+      <div class="fenetre-contenu">
+        <h2>Nouvelle recette</h2>
+
+        <label>Nom *</label>
+        <input type="text" id="champ-nom" placeholder="Ex : Gateau au chocolat" />
+        <span class="message-erreur" id="erreur-nom"></span>
+
+        <label>Catégorie *</label>
+        <select id="champ-categorie">
+          <option value="">-- Choisir --</option>
+          <option value="Entrées">Entrées</option>
+          <option value="Plats">Plats</option>
+          <option value="Desserts">Desserts</option>
+        </select>
+        <span class="message-erreur" id="erreur-categorie"></span>
+
+        <label>Ingrédients *</label>
+        <input type="text" id="champ-ingredients" placeholder="Ex : Farine, sucre, oeufs" />
+        <span class="message-erreur" id="erreur-ingredients"></span>
+
+        <label>Instructions *</label>
+        <textarea id="champ-instructions" rows="4"></textarea>
+        <span class="message-erreur" id="erreur-instructions"></span>
+
+        <div class="boutons-formulaire">
+          <button id="bouton-annuler">Annuler</button>
+          <button id="bouton-enregistrer">Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="notification"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

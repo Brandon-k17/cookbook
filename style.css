@@ -1,0 +1,118 @@
+:root { --noir: #1a1a1a; --orange: #f1ac43; --beige: #f8f9fa; --blanc: #fff; --gris: #777; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Roboto', sans-; background: var(--beige); color: var(--noir); }
+em { font-family: 'Roboto'; font-style: italic; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--noir);
+  color: var(--blanc);
+  padding: 0 2rem;
+  height: 56px;
+  position: sticky;
+  top: 0;
+}
+header button {
+  background: var(--orange);
+  color: var(--blanc);
+  border: none;
+  padding: .5rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+header button:hover, #bouton-enregistrer:hover { opacity: .85; }
+
+
+.page { display: flex; min-height: calc(100vh - 112px); }
+.sidebar { width: 180px; border-right: 1px solid #e0d8cc; padding: 1.5rem 1rem; flex-shrink: 0; }
+.titre-sidebar { font-size: .7rem; font-weight: 700; color: var(--gris); margin-bottom: 1rem; }
+#liste-categories { list-style: none; }
+#liste-categories li { margin-bottom: .3rem; }
+.bouton-categorie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: .5rem .8rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  font-size: .9rem;
+  font-family: 'Roboto';
+}
+.bouton-categorie:hover { background: #ede7db; }
+.bouton-categorie.actif { background: var(--orange); color: var(--blanc); font-weight: 600; }
+.compteur-badge { font-size: .75rem; background: rgba(0,0,0,.1); border-radius: 10px; padding: .1rem .5rem; }
+.bouton-categorie.actif .compteur-badge { background: rgba(255,255,255,.25); }
+
+
+.contenu { flex: 1; padding: 2rem; }
+.entete-principal { margin-bottom: .5rem; }
+.entete-principal h1 { font-family: 'Roboto'; font-size: 1.8rem; }
+hr { border: none; border-top: 2px solid var(--orange); margin-bottom: 1.5rem; }
+#recherche {
+  width: 320px;
+  max-width: 100%;
+  padding: .6rem 1rem;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: .9rem;
+  font-family: 'Roboto';
+  background: var(--blanc);
+  outline: none;
+  margin: 0 0 1.8rem auto;
+  display: block;
+}
+#recherche:focus,
+.fenetre-contenu input:focus,
+.fenetre-contenu select:focus,
+.fenetre-contenu textarea:focus { border-color: var(--orange); }
+
+
+#grille { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.fiche { background: var(--blanc); border-radius: 14px; overflow: hidden; height: 350px; box-shadow: 0 2px 8px rgba(0,0,0,.08); transition: transform .2s; }
+.fiche:hover { transform: translateY(-4px); }
+.fiche-image { width: 100%; height: 160px; object-fit: cover; display: block; }
+.fiche-contenu { padding: 1rem; }
+.fiche-categorie { font-size: .7rem; font-weight: 700; letter-spacing: .08em; color: var(--gris); text-transform: uppercase; margin-bottom: .4rem; }
+.fiche-titre { font-family: 'Roboto'; font-size: 1rem; margin-bottom: .4rem; }
+.fiche-ingredients { font-size: .8rem; color: var(--gris); margin-bottom: .8rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.bouton-detail { display: block; margin: .6rem auto 0; padding: .4rem 1rem; border: 1.5px solid var(--noir); border-radius: 25px; background: transparent; font-size: .8rem; font-family: 'Roboto'; cursor: pointer; transition: background .2s, color .2s; }
+.bouton-detail:hover { background: var(--noir); color: var(--blanc); }
+
+
+#fond-detail, #fond-formulaire { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex; justify-content: center; align-items: center; z-index: 100; }
+.masque { display: none !important; }
+.fenetre { background: var(--blanc); border-radius: 16px; width: 90%; max-width: 480px; max-height: 88vh; overflow-y: auto; position: relative; }
+.fenetre > button { position: absolute; top: .8rem; right: .8rem; background: rgba(0,0,0,.2); border: none; width: 30px; height: 30px; border-radius: 50%; color: var(--blanc); font-size: .9rem; cursor: pointer; z-index: 1; }
+.fenetre > button:hover { background: rgba(0,0,0,.4); }
+#image-detail { width: 100%; height: 200px; object-fit: cover; border-radius: 16px 16px 0 0; display: block; }
+.fenetre-contenu { padding: 1.5rem; }
+.fenetre-contenu small { font-size: .7rem; font-weight: 700; letter-spacing: .1em; color: var(--gris); text-transform: uppercase; }
+.fenetre-contenu h2 { font-family: 'Roboto'; font-size: 1.5rem; margin: .3rem 0 1rem; }
+.fenetre-contenu h3 { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--orange); margin: 1rem 0 .4rem; }
+.fenetre-contenu ul { padding-left: 1.2rem; font-size: .9rem; line-height: 1.8; }
+.fenetre-contenu p { font-size: .9rem; line-height: 1.7; white-space: pre-line; }
+
+
+.fenetre-contenu label { display: block; font-size: .85rem; font-weight: 600; margin: .8rem 0 .3rem; }
+.fenetre-contenu input, .fenetre-contenu select, .fenetre-contenu textarea { width: 100%; padding: .6rem .8rem; border: 1.5px solid #ddd; border-radius: 8px; font-size: .9rem; font-family: 'Roboto', sans-serif; outline: none; }
+.message-erreur { color: red; font-size: .78rem; min-height: 1.1em; display: block; }
+.boutons-formulaire { display: flex; gap: .8rem; justify-content: flex-end; margin-top: 1rem; }
+#bouton-annuler { padding: .5rem 1.2rem; border: 1.5px solid #ddd; border-radius: 8px; background: transparent; cursor: pointer; }
+#bouton-enregistrer { padding: .5rem 1.4rem; background: var(--orange); color: var(--blanc); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; }
+
+
+#notification { position: fixed; bottom: 2rem; right: 2rem; background: var(--noir); color: var(--blanc); padding: .8rem 1.5rem; border-radius: 10px; font-size: .9rem; opacity: 0; pointer-events: none; transition: opacity .35s; z-index: 200; }
+#notification.visible { opacity: 1; }
+
+
+footer { display: flex; justify-content: space-between; align-items: center; background: var(--noir); color: var(--blanc); padding: 1rem 2rem; font-size: .85rem; flex-wrap: wrap; gap: .5rem; }
+footer nav { display: flex; gap: 1.5rem; }
+footer a { color: #aaa; text-decoration: none; }
+footer a:hover { color: var(--blanc); }
+footer span:last-child { color: #666; font-size: .8rem; }
